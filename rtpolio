@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#hero">Home</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section id="hero">
+<!-- Hero content -->
+</section>
+<section id="portfolio">
+<!-- Portfolio content -->
+</section>
+<section id="about">
+<!-- About content -->
+</section>
+<section id="contact">
+<!-- Contact content -->
+</section>
+<footer>
+<!-- Footer content -->
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+CSS (in styles.css file):
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #f0f0f0;
+padding: 1em;
+text-align: center;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav a {
+color: #333;
+text-decoration: none;
+}
+
+/* Additional styles for each section */
+#hero {
+background-image: url('hero.jpg');
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+
+#portfolio {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+}
+
+#about {
+text-align: center;
+padding: 2em;
+}
+
+#contact {
+text-align: center;
+padding: 2em;
+}
+
+footer {
+background-color: #f0f0f0;
+padding: 1em;
+text-align: center;
+color: #666;
+}
+JavaScript (in script.js file):
+// Add active class to navigation links on click
+navLinks.forEach((link) => {
+link.addEventListener("click", () => {
+link.classList.add("active");
+});
+});
